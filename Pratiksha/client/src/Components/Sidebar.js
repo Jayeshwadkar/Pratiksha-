@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, {  useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
+
 import {
   Drawer,
   List,
@@ -16,6 +17,7 @@ import {
   Menu as MenuIcon,
   ArrowBack as ArrowBackIcon,
 } from "@material-ui/icons";
+import {  NavLink} from "react-router-dom";
 
 const drawerWidth = 240;
 
@@ -61,6 +63,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Sidebar = () => {
+  
   const classes = useStyles();
   const [selectedButton, setSelectedButton] = useState("");
 
@@ -112,19 +115,19 @@ const Sidebar = () => {
         <List>
           {selectedButton === "button1" && (
             <div>
-              <ListItem button className={classes.button}>
-                <ListItemIcon>
-                  <HomeIcon className={classes.icon} />
-                </ListItemIcon>
-                <ListItemText primary="Employee" className={classes.text} />
-              </ListItem>
-              <ListItem button className={classes.button}>
+                <ListItem button className={classes.button} component={NavLink} to="/employee" activeClassName={classes.active}>
+        <ListItemIcon>
+          <HomeIcon className={classes.icon} />
+        </ListItemIcon>
+        <ListItemText primary="Employee" className={classes.text} />
+      </ListItem>
+              <ListItem button className={classes.button} component={NavLink} to="/drive" activeClassName={classes.active}>
                 <ListItemIcon>
                   <ShoppingCartIcon className={classes.icon} />
                 </ListItemIcon>
                 <ListItemText primary="Drivers" className={classes.text} />
               </ListItem>
-              <ListItem button className={classes.button}>
+              <ListItem button className={classes.button} component={NavLink} to="/larry" activeClassName={classes.active}>
                 <ListItemIcon>
                   <AccountCircleIcon className={classes.icon} />
                 </ListItemIcon>
@@ -134,13 +137,13 @@ const Sidebar = () => {
           )}
           {selectedButton === "button2" && (
             <div>
-              <ListItem button className={classes.button}>
+              <ListItem button className={classes.button} component={NavLink} to="/addbill" activeClassName={classes.active}>
                 <ListItemIcon>
                   <HomeIcon className={classes.icon} />
                 </ListItemIcon>
                 <ListItemText primary="Add Bill" className={classes.text} />
               </ListItem>
-              <ListItem button className={classes.button}>
+              <ListItem button className={classes.button} component={NavLink} to="/viewbill" activeClassName={classes.active}>
                 <ListItemIcon>
                   <ShoppingCartIcon className={classes.icon} />
                 </ListItemIcon>
@@ -149,7 +152,7 @@ const Sidebar = () => {
                   className={classes.text}
                 />
               </ListItem>
-              <ListItem button className={classes.button}>
+              <ListItem button className={classes.button} component={NavLink} to="/viewpartybill" activeClassName={classes.active}>
                 <ListItemIcon>
                   <AccountCircleIcon className={classes.icon} />
                 </ListItemIcon>
@@ -158,7 +161,7 @@ const Sidebar = () => {
                   className={classes.text}
                 />
               </ListItem>
-              <ListItem button className={classes.button}>
+              <ListItem button className={classes.button} component={NavLink} to="/viewann" activeClassName={classes.active}>
                 <ListItemIcon>
                   <HomeIcon className={classes.icon} />
                 </ListItemIcon>
@@ -167,13 +170,13 @@ const Sidebar = () => {
                   className={classes.text}
                 />
               </ListItem>
-              <ListItem button className={classes.button}>
+              <ListItem button className={classes.button} component={NavLink} to="/report" activeClassName={classes.active}>
                 <ListItemIcon>
                   <HomeIcon className={classes.icon} />
                 </ListItemIcon>
                 <ListItemText primary="Reports" className={classes.text} />
               </ListItem>
-              <ListItem button className={classes.button}>
+              <ListItem button className={classes.button} component={NavLink} to="/addpod" activeClassName={classes.active}>
                 <ListItemIcon>
                   <HomeIcon className={classes.icon} />
                 </ListItemIcon>
@@ -183,13 +186,13 @@ const Sidebar = () => {
           )}
           {selectedButton === "button3" && (
             <div>
-              <ListItem button className={classes.button}>
+              <ListItem button className={classes.button} component={NavLink} to="/addrecip" activeClassName={classes.active}>
                 <ListItemIcon>
                   <HomeIcon className={classes.icon} />
                 </ListItemIcon>
                 <ListItemText primary="Add Receipt" className={classes.text} />
               </ListItem>
-              <ListItem button className={classes.button}>
+              <ListItem button className={classes.button} component={NavLink} to="/viewrecip" activeClassName={classes.active}>
                 <ListItemIcon>
                   <ShoppingCartIcon className={classes.icon} />
                 </ListItemIcon>
@@ -199,13 +202,13 @@ const Sidebar = () => {
           )}
           {selectedButton === "button4" && (
             <div>
-              <ListItem button className={classes.button}>
+              <ListItem button className={classes.button} component={NavLink} to="/vechicle" activeClassName={classes.active}>
                 <ListItemIcon>
                   <HomeIcon className={classes.icon} />
                 </ListItemIcon>
                 <ListItemText primary="Vechicle" className={classes.text} />
               </ListItem>
-              <ListItem button className={classes.button}>
+              <ListItem button className={classes.button}component={NavLink} to="/maintype" activeClassName={classes.active}>
                 <ListItemIcon>
                   <ShoppingCartIcon className={classes.icon} />
                 </ListItemIcon>
@@ -214,13 +217,13 @@ const Sidebar = () => {
                   className={classes.text}
                 />
               </ListItem>
-              <ListItem button className={classes.button}>
+              <ListItem button className={classes.button} component={NavLink} to="/tyre" activeClassName={classes.active}>
                 <ListItemIcon>
                   <AccountCircleIcon className={classes.icon} />
                 </ListItemIcon>
                 <ListItemText primary="Tyre" className={classes.text} />
               </ListItem>
-              <ListItem button className={classes.button}>
+              <ListItem button className={classes.button} component={NavLink} to="/tyrefit" activeClassName={classes.active}>
                 <ListItemIcon>
                   <HomeIcon className={classes.icon} />
                 </ListItemIcon>
@@ -233,7 +236,7 @@ const Sidebar = () => {
           )}
           {selectedButton === "button5" && (
             <div>
-              <ListItem button className={classes.button}>
+              <ListItem button className={classes.button} component={NavLink} to="/consgnote" activeClassName={classes.active}>
                 <ListItemIcon>
                   <HomeIcon className={classes.icon} />
                 </ListItemIcon>
@@ -242,7 +245,7 @@ const Sidebar = () => {
                   className={classes.text}
                 />
               </ListItem>
-              <ListItem button className={classes.button}>
+              <ListItem button className={classes.button} component={NavLink} to="/addcon" activeClassName={classes.active}>
                 <ListItemIcon>
                   <ShoppingCartIcon className={classes.icon} />
                 </ListItemIcon>
@@ -251,13 +254,13 @@ const Sidebar = () => {
                   className={classes.text}
                 />
               </ListItem>
-              <ListItem button className={classes.button}>
+              <ListItem button className={classes.button} component={NavLink} to="/podlist" activeClassName={classes.active}>
                 <ListItemIcon>
                   <AccountCircleIcon className={classes.icon} />
                 </ListItemIcon>
                 <ListItemText primary="POD List" className={classes.text} />
               </ListItem>
-              <ListItem button className={classes.button}>
+              <ListItem button className={classes.button} component={NavLink} to="/reportbok" activeClassName={classes.active}>
                 <ListItemIcon>
                   <HomeIcon className={classes.icon} />
                 </ListItemIcon>

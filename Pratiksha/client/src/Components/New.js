@@ -15,7 +15,7 @@ const New = () => {
         <Box sx={{ display: 'flex' }}>
           <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
             <Grid container spacing={1}>
-            <Grid item xs={20}>
+            <Grid item xs={12}>
                 <Stack spacing={2} direction="row">
                 <Card sx={{ height: '100%', width: '40%', border: '1px solid #00b0ff'  }}>
   <div style={{ height: '50%', backgroundColor: '#0000FF' }}>

@@ -1,11 +1,11 @@
 import React from 'react'
 
-const employee = () => {
+const Type = () => {
   return (
     <div>
-      Employee
+      <h1>Tyre</h1>
     </div>
   )
 }
 
-export default employee
+export default Type
