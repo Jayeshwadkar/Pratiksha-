@@ -16,7 +16,7 @@ import {
   AccountCircle as AccountCircleIcon,
   Menu as MenuIcon,
   ArrowBack as ArrowBackIcon,
-} from "@material-ui/icons";
+} from '@material-ui/icons';
 import {  NavLink} from "react-router-dom";
 
 const drawerWidth = 240;
