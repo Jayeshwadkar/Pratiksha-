@@ -1,7 +1,7 @@
 import { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React from 'react';
-import Layout from './Layout';
+import Layout from '../Components/Layout';
 
 
 const Dashboard = lazy(() => import('../Components/Dashboard'));
