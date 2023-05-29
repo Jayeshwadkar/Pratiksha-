@@ -41,7 +41,7 @@ export default function ButtonAppBar() {
             Dashboard/
           </Button>
           <Button
-            sx={{
+            sx={{ 
               color: activeButton === 2 ? 'blue' : '#9e9e9e',
               '@media (max-width: 600px)': {
                 // Styles for screens with width up to 600px
