@@ -28,7 +28,7 @@
 // export default Navbar;
 import React, { useState } from 'react';
 import { AppBar, Toolbar, Typography, IconButton } from '@material-ui/core';
-import { ExitToApp as ExitToAppIcon } from '@material-ui/icons';
+import { ExitToApp as ExitToAppIcon, LockOpen as LockOpenIcon } from '@material-ui/icons';
 
 const Navbar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -64,7 +64,8 @@ const Navbar = () => {
             </IconButton>
           </React.Fragment>
         ) : (
-          <Typography variant="h6" onClick={handleLogin} style={{ cursor: 'pointer' }}>
+          <Typography variant="h6" onClick={handleLogin} style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}>
+            <LockOpenIcon style={{ marginRight: '5px' }} />
             Login
           </Typography>
         )}
@@ -74,4 +75,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
