@@ -1,6 +1,6 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-
+import { NavLink, useNavigate } from "react-router-dom";
 import {
   Drawer,
   List,
@@ -17,7 +17,6 @@ import {
   Menu as MenuIcon,
   ArrowBack as ArrowBackIcon,
 } from '@material-ui/icons';
-import {  NavLink} from "react-router-dom";
 
 const drawerWidth = 240;
 
@@ -63,53 +62,55 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Sidebar = () => {
-  
   const classes = useStyles();
   const [selectedButton, setSelectedButton] = useState("");
+  const navigate = useNavigate(); 
 
   const handleButtonClick = (button) => {
     setSelectedButton(button);
   };
 
+  const handleMainMenuClick = () => {
+    setSelectedButton("");
+    navigate("/");  // Replace "/dashboard" with the actual path of your dashboard
+  };
+
   return (
     <Drawer
-  className={classes.drawer}
-  variant="permanent"
-  classes={{
-    paper: classes.drawerPaper,
-  }}
->
-  <div className={classes.logoContainer}>
-    <Avatar alt="Logo" src="/path/to/logo.png" className={classes.logo} />
-  </div>
-  <Typography variant="h5" className={classes.text}>
-    PRATIKSHA
-  </Typography>
-  <List>
-    {selectedButton && (
-      <ListItem
-        button
-        className={classes.button}
-        onClick={() => setSelectedButton("")}
-      >
-        <ListItemIcon>
-          <ArrowBackIcon className={classes.icon} />
-        </ListItemIcon>
-        <ListItemText primary="Main Menu" className={classes.text} />
-      </ListItem>
-    )}
-    {!selectedButton && (
-      <ListItem
-        button 
-        className={classes.button}
-      >
-        <ListItemIcon>
-          <MenuIcon className={classes.icon} />
-        </ListItemIcon>
-        <ListItemText primary="Main Menu" className={classes.text} />
-      </ListItem>
-    )}
-  </List>
+      className={classes.drawer}
+      variant="permanent"
+      classes={{
+        paper: classes.drawerPaper,
+      }}
+    >
+      <div className={classes.logoContainer}>
+        <Avatar alt="Logo" src="/path/to/logo.png" className={classes.logo} />
+      </div>
+      <Typography variant="h5" className={classes.text}>
+        PRATIKSHA
+      </Typography>
+      <List>
+        {selectedButton && (
+          <ListItem
+            button
+            className={classes.button}
+            onClick={handleMainMenuClick}
+          >
+            <ListItemIcon>
+              <ArrowBackIcon className={classes.icon} />
+            </ListItemIcon>
+            <ListItemText primary="Main Menu" className={classes.text} />
+          </ListItem>
+        )}
+        {!selectedButton && (
+          <ListItem button className={classes.button} onClick={handleMainMenuClick}>
+            <ListItemIcon>
+              <MenuIcon className={classes.icon} />
+            </ListItemIcon>
+            <ListItemText primary="Main Menu" className={classes.text} />
+          </ListItem>
+        )}
+      </List>
  
       {selectedButton ? (
         <List>
