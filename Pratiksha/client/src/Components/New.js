@@ -105,7 +105,7 @@ const New = () => {
             </Grid>
 
             <Grid item xs={12}>
-              <Stack spacing={3} direction="row">
+              <Stack spacing={2} direction="row">
                 <Card
                   sx={{
                     height: "50%",
@@ -214,14 +214,14 @@ const New = () => {
               </Stack>
             </Grid>
 
-            <Grid item xs={12}>
-              <Stack spacing={3} direction="row">
+            <Grid item xs={9.7}>
+              <Stack spacing={2} direction="row">
                 <Card
                   sx={{
                     height: "50%",
                     width: "50%",
                     backgroundColor: "#00b0ff",
-                    marginLeft: "17%",
+                    marginLeft: "20%",
                     position: "static"
                   }}
                 >
@@ -274,6 +274,7 @@ const New = () => {
                   sx={{
                     height: "50%",
                     width: "50%",
+
                     backgroundColor: "#00b0ff"
                   }}
                 >
