@@ -1,4 +1,4 @@
-import { AppBar, Box, Button, IconButton, Toolbar, Typography } from '@mui/material';
+import { AppBar, Box, Button, Toolbar } from '@mui/material';
 import React, { useState } from 'react';
 
 export default function ButtonAppBar() {
@@ -10,19 +10,21 @@ export default function ButtonAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ backgroundColor: '#e0e0e0', marginTop: 5 }}>
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 1 }}
-          >
-            {/* <MenuIcon /> */}
-          </IconButton>
+      <AppBar
+        position="static"
+        sx={{
+          backgroundColor: '#e0e0e0',
+          marginTop: 4,
+          height: '60px',
+          top: '80px',
+          left: '15%',
+          width: '100%',
+          
+        }}
+      >
+        <Toolbar sx={{ justifyContent: 'flex-start' }}>
           <Button
-            sx={{ color: activeButton === 1 ? 'blue' : '#9e9e9e' }}
+            sx={{ color: activeButton === 1 ? 'blue' : '#9e9e9e', marginLeft: '15%',position:'static' }}
             onClick={() => handleButtonClick(1)}
           >
             Dashboard/

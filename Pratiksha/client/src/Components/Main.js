@@ -1,6 +1,8 @@
 import { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React from 'react';
+import Layout from './Layout';
+
 
 const Dashboard = lazy(() => import('../Components/Dashboard'));
 const Employe = lazy(() => import('../Pages/Master/Employe'));
@@ -26,6 +28,7 @@ const ReportBok = lazy(() => import('../Pages/Booking/ReportBok'));
 const Main = () => {
   return (
     <Router>
+    <Layout>
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path="/" element={<Dashboard />} />
@@ -50,6 +53,7 @@ const Main = () => {
           <Route path="/reportbok" element={<ReportBok />} />
         </Routes>
       </Suspense>
+      </Layout>
     </Router>
   );
 };

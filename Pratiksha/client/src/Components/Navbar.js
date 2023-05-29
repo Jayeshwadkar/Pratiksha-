@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="static" style={{ backgroundColor: 'black' }}>
+    <AppBar position="static" style={{ backgroundColor: 'black',width:'100%' }}>
       <Toolbar>
         <Typography variant="h6" style={{ flexGrow: 1 }}>
           Your App
