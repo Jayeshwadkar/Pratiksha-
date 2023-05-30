@@ -108,10 +108,10 @@ const New = () => {
               <Stack spacing={2} direction="row">
                 <Card
                   sx={{
+                    position: "static",
                     height: "50%",
                     width: "50%",
                     marginLeft: "17%",
-                    position: "static",
                     backgroundColor: "#00b0ff"
                   }}
                 >
@@ -136,6 +136,7 @@ const New = () => {
 
                 <Card
                   sx={{
+                    position: "static",
                     height: "50%",
                     width: "50%",
                     backgroundColor: "#00b0ff"
@@ -162,6 +163,7 @@ const New = () => {
 
                 <Card
                   sx={{
+                    position: "static",
                     height: "50%",
                     width: "50%",
                     backgroundColor: "#00b0ff"
@@ -188,6 +190,7 @@ const New = () => {
 
                 <Card
                   sx={{
+                    position: "static",
                     height: "50%",
                     width: "50%",
                     backgroundColor: "#00b0ff"
@@ -214,15 +217,15 @@ const New = () => {
               </Stack>
             </Grid>
 
-            <Grid item xs={9.7}>
+            <Grid item xs={12}>
               <Stack spacing={2} direction="row">
                 <Card
                   sx={{
+                    position: "static",
                     height: "50%",
                     width: "50%",
                     backgroundColor: "#00b0ff",
-                    marginLeft: "20%",
-                    position: "static"
+                    marginLeft: "17%"
                   }}
                 >
                   <CardContent>
@@ -246,6 +249,7 @@ const New = () => {
 
                 <Card
                   sx={{
+                    position: "static",
                     height: "50%",
                     width: "50%",
                     backgroundColor: "#00b0ff"
@@ -272,9 +276,9 @@ const New = () => {
 
                 <Card
                   sx={{
+                    position: "static",
                     height: "50%",
                     width: "50%",
-
                     backgroundColor: "#00b0ff"
                   }}
                 >
