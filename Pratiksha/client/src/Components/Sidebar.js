@@ -132,7 +132,7 @@ const Sidebar = () => {
                 <ListItemIcon>
                   <AccountCircleIcon className={classes.icon} />
                 </ListItemIcon>
-                <ListItemText primary="Larry Permit" className={classes.text} />
+                <ListItemText primary="Lorry Permit" className={classes.text} />
               </ListItem>
             </div>
           )}
