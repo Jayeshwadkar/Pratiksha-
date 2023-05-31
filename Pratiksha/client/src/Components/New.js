@@ -22,10 +22,10 @@ const New = () => {
                     height: "100%",
                     width: "40%",
                     border: "1px solid #00b0ff",
-                    marginLeft: "17%"
+                    marginLeft: "17.5%"
                   }}
                 >
-                  <div style={{ height: "50%", backgroundColor: "#0000FF" }}>
+                  <div style={{ height: "50%", backgroundColor: "#0000FF" ,textAlign:"left"}}>
                     <CardContent>
                       <Typography
                         gutterBottom
@@ -38,16 +38,16 @@ const New = () => {
                       <Typography
                         variant="body2"
                         color="text.secondary"
-                        sx={{ color: "#fafafa" }}
+                        sx={{ color: "#fafafa",textAlign:"left" }}
                       >
                         Customer
                       </Typography>
                     </CardContent>
                   </div>
-                  <div style={{ height: "50%", backgroundColor: "#FFFFFF" }}>
+                  <div style={{ height: "50%", backgroundColor: "#FFFFFF",textAlign:"left" }}>
                     <CardContent>
                       <CardActions>
-                        <Button size="small" sx={{ color: "#000000" }}>
+                        <Button size="small" sx={{ color: "#000000",textAlign:"left" }}>
                           View Details
                           <ArrowForwardIosIcon
                             fontSize="small"
@@ -73,14 +73,14 @@ const New = () => {
                         gutterBottom
                         variant="h5"
                         component="div"
-                        sx={{ color: "#fafafa" }}
+                        sx={{ color: "#fafafa",textAlign:"left" }}
                       >
                         Rs. 21,207,025.00
                       </Typography>
                       <Typography
                         variant="body2"
                         color="text.secondary"
-                        sx={{ color: "#fafafa" }}
+                        sx={{ color: "#fafafa",textAlign:"left" }}
                       >
                         TWO CRORE TWELVE LAKH SEVEN THOUSAND TWENTY FIVE RUPEES
                         Outstanding.
@@ -111,7 +111,8 @@ const New = () => {
                     position: "static",
                     height: "50%",
                     width: "50%",
-                    marginLeft: "17%",
+                    marginLeft: "17.5%",
+                    // position: "static",
                     backgroundColor: "#00b0ff"
                   }}
                 >
@@ -120,14 +121,14 @@ const New = () => {
                       gutterBottom
                       variant="h5"
                       component="div"
-                      sx={{ color: "#fafafa" }}
+                      sx={{ color: "#fafafa",textAlign:"left" }}
                     >
                       0
                     </Typography>
                     <Typography
                       variant="body2"
                       color="text.secondary"
-                      sx={{ color: "#fafafa" }}
+                      sx={{ color: "#fafafa",textAlign:"left" }}
                     >
                       Insurance Date
                     </Typography>
@@ -147,14 +148,14 @@ const New = () => {
                       gutterBottom
                       variant="h5"
                       component="div"
-                      sx={{ color: "#fafafa" }}
+                      sx={{ color: "#fafafa",textAlign:"left" }}
                     >
                       0
                     </Typography>
                     <Typography
                       variant="body2"
                       color="text.secondary"
-                      sx={{ color: "#fafafa" }}
+                      sx={{ color: "#fafafa",textAlign:"left" }}
                     >
                       Tax Date
                     </Typography>
@@ -174,14 +175,14 @@ const New = () => {
                       gutterBottom
                       variant="h5"
                       component="div"
-                      sx={{ color: "#fafafa" }}
+                      sx={{ color: "#fafafa",textAlign:"left" }}
                     >
                       0
                     </Typography>
                     <Typography
                       variant="body2"
                       color="text.secondary"
-                      sx={{ color: "#fafafa" }}
+                      sx={{ color: "#fafafa",textAlign:"left" }}
                     >
                       Fitness Date
                     </Typography>
@@ -201,14 +202,14 @@ const New = () => {
                       gutterBottom
                       variant="h5"
                       component="div"
-                      sx={{ color: "#fafafa" }}
+                      sx={{ color: "#fafafa",textAlign:"left" }}
                     >
                       0
                     </Typography>
                     <Typography
                       variant="body2"
                       color="text.secondary"
-                      sx={{ color: "#fafafa" }}
+                      sx={{ color: "#fafafa",textAlign:"left" }}
                     >
                       N/P Date
                     </Typography>
@@ -217,15 +218,23 @@ const New = () => {
               </Stack>
             </Grid>
 
-            <Grid item xs={12}>
+            <Grid item xs={9.5}>
               <Stack spacing={2} direction="row">
                 <Card
                   sx={{
+
                     position: "static",
-                    height: "50%",
-                    width: "50%",
+//                     height: "50%",
+//                     width: "50%",
+//                     backgroundColor: "#00b0ff",
+//                     marginLeft: "17%"
+// =======
+                    height: "40%",
+                    width: "40%",
                     backgroundColor: "#00b0ff",
-                    marginLeft: "17%"
+                    marginLeft: "22%",
+                    // position: "static"
+
                   }}
                 >
                   <CardContent>
@@ -233,14 +242,14 @@ const New = () => {
                       gutterBottom
                       variant="h5"
                       component="div"
-                      sx={{ color: "#fafafa" }}
+                      sx={{ color: "#fafafa",textAlign:"left" }}
                     >
                       0
                     </Typography>
                     <Typography
                       variant="body2"
                       color="text.secondary"
-                      sx={{ color: "#fafafa" }}
+                      sx={{ color: "#fafafa",textAlign:"left" }}
                     >
                       5 Years Date
                     </Typography>
@@ -249,9 +258,14 @@ const New = () => {
 
                 <Card
                   sx={{
+
                     position: "static",
-                    height: "50%",
-                    width: "50%",
+//                     height: "50%",
+//                     width: "50%",
+// =======
+                    height: "40%",
+                    width: "40%",
+
                     backgroundColor: "#00b0ff"
                   }}
                 >
@@ -260,25 +274,29 @@ const New = () => {
                       gutterBottom
                       variant="h5"
                       component="div"
-                      sx={{ color: "#fafafa" }}
+                      sx={{ color: "#fafafa",textAlign:"left" }}
                     >
                       0
                     </Typography>
                     <Typography
                       variant="body2"
                       color="text.secondary"
-                      sx={{ color: "#fafafa" }}
+                      sx={{ color: "#fafafa",textAlign:"left" }}
                     >
                       RC Date
                     </Typography>
                   </CardContent>
                 </Card>
-
+                
                 <Card
                   sx={{
+
                     position: "static",
-                    height: "50%",
-                    width: "50%",
+//                     height: "50%",
+//                     width: "50%",
+// =======
+                    height: "40%",
+                    width: "40%",
                     backgroundColor: "#00b0ff"
                   }}
                 >
@@ -287,21 +305,21 @@ const New = () => {
                       gutterBottom
                       variant="h5"
                       component="div"
-                      sx={{ color: "#fafafa" }}
+                      sx={{ color: "#fafafa",textAlign:"left" }}
                     >
                       0
                     </Typography>
                     <Typography
                       variant="body2"
                       color="text.secondary"
-                      sx={{ color: "#fafafa" }}
+                      sx={{ color: "#fafafa",textAlign:"left" }}
                     >
                       PUC Date
                     </Typography>
                   </CardContent>
                 </Card>
               </Stack>
-            </Grid>
+              </Grid>
           </Grid>
         </Box>
       </Box>

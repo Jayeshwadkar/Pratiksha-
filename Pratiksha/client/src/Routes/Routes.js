@@ -6,7 +6,7 @@ import Layout from '../Components/Layout';
 
 const Dashboard = lazy(() => import('../Components/Dashboard'));
 const Employe = lazy(() => import('../Pages/Master/Employe'));
-const Driver = lazy(() => import('../Pages/Master/Driver'));
+const DriverM = lazy(() => import('../Pages/Master/DriverM'));
 const Larry = lazy(() => import('../Pages/Master/Larry'));
 const AddBill = lazy(() => import('../Pages/Bill/AddBill'));
 const AddPod = lazy(() => import('../Pages/Bill/AddPod'));
@@ -33,7 +33,7 @@ const Main = () => {
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/employee" element={<Employe />} />
-          <Route path="/driver" element={<Driver />} />
+          <Route path="/drive" element={<DriverM />} />
           <Route path="/larry" element={<Larry />} />
           <Route path="/addbill" element={<AddBill />} />
           <Route path="/addpod" element={<AddPod />} />

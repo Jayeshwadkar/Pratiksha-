@@ -13,14 +13,14 @@ const Employee = () => {
   return (
     <>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginRight: '2%', marginLeft: '17%' }}>
-        <h1>Employee Details</h1>
+        <h1 style={{marginLeft:'22px'}}>Employee Details</h1>
         <Button variant="contained" size="medium">Add Employee</Button>
       </div>
       <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
         <div style={{  padding: "20px", borderRadius: "10px" }}>
           <div style={{ display: "flex", alignItems: "center", marginBottom: "10px" }}>
             <h2>Employee Details:</h2>
-            <TextField type="text" placeholder="Search" variant="outlined" style={{ width: "200px", marginRight: "10px" }} />
+            <TextField type="text" placeholder="Search" variant="outlined" style={{ Mawidth: "200px", marginRight: "10px" }} />
           </div>
           <TableContainer style={{ border: "1px solid #000000", borderRadius: "10px", width: "130%" }}>
             <Table>
